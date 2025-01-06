@@ -1,0 +1,26 @@
+/* NavBarLink.module.css */
+.nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #6050DC; /* Change to your desired hover color */
+    /* text-decoration: underline; */
+  }
+  
+  .nav-link.active {
+    color: #fff;
+    background-color: #6050DC; /* Change to your desired active background color */
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .nav-link:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+  

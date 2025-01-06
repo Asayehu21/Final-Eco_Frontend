@@ -1,0 +1,59 @@
+.aboutContainer {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mission, .vision, .values, .team, .cta {
+    margin: 20px 0;
+  }
+  
+  .teamMembers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Space between items */
+  }
+  
+  .teamMember {
+    text-align: center;
+  }
+  
+  .teamMember img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cta {
+    text-align: center;
+  }
+  
+  .ctaButton {
+    padding: 10px 20px;
+    background-color: #6050DC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2em; /* Adjust header size for smaller screens */
+    }
+  
+    .header p,
+    .mission p,
+    .vision p,
+    .values p,
+    .cta p {
+      font-size: 1em; /* Adjust font size for better readability */
+    }
+  }

@@ -1,0 +1,72 @@
+/* Contact.module.css */
+.contactContainer {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px; /* Gap between columns */
+}
+
+.contactInfo {
+  background-color: #fff; /* White background for contact info */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below contact info */
+}
+
+.contactForm {
+  background-color: #fff; /* White background for form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+}
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+  .contactForm {
+    display: flex; /* Ensure the form is displayed as a flex column */
+    margin-top: 20px; /* Space above the form */
+  }
+
+  .formGroup {
+    margin-bottom: 15px; /* Space between form fields */
+  }
+}
+
+.formGroup {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+input, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.submitButton {
+  background-color: #12c462; /* Match footer color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.submitButton:hover {
+  background-color: #0f8447; /* Darker shade on hover */
+}

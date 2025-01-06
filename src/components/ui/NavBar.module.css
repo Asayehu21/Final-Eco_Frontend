@@ -1,0 +1,49 @@
+@media (max-width: 1000px) {
+    .responsiveCart {
+        margin-top: 20px;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; 
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 992px) { /* Optional: Media query for smaller devices */
+    .navbar-nav {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; 
+      justify-content: center;     /* Center text */
+    }
+  }
+
+.stickyNavbar {
+    position: sticky !important;
+    top:0;
+    z-index: 1030;
+    position: sticky; 
+}
+.navbar-collapse {
+    display: flex !important; /* Ensure it uses flexbox */
+    justify-content: center;  /* Center the items */
+    align-items: center;      /* Align items vertically */
+    width: 100%;              /* Take full width */
+  }
+  .navbar-nav {
+    display: flex;            /* Flexbox for nav items */
+    justify-content: center;  /* Center items within navbar */
+    align-items: center;      /* Align items vertically */
+  }
+  .navbar-brand img {
+    height: 70px;
+    margin-right: 10px;
+  }
+  .nav-link.active {
+    color: #fff;
+    background-color: #6050DC; /* Change to your desired active background color */
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .nav-link:hover {
+    color: #6050DC; /* Change to your desired hover color */
+    text-decoration: underline;
+  }

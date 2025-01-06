@@ -1,0 +1,92 @@
+/* SignupPage.css */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+}
+
+.signup-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.signup-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signup-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-footer p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+.form-control {
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  align-items:center;
+  
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+textarea.form-control {
+  resize: vertical;
+  height: 100px;
+}
+
+.text-success {
+  color: #28a745;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
