@@ -1,7 +1,7 @@
 // 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MainLayout from "./layout/MainLayout"
-import HomePage from "./components/home/Homepage"
+import HomePage from "./components/home/HomePage"
 import NotFoundPage from "./components/ui/NotFoundPage"
 import ProductPage from "./components/product/ProductPage"
 import { useEffect, useState } from "react"
@@ -61,7 +61,7 @@ const App = () => {
       <Route path="login" element={<LoginPage />} />
       <Route path="signup" element={<SignupPage />} />
       <Route path="profile" element={<UserProfilePage />} />
-      <Route path="checkout" element={<CheckoutPage />} />
+      {/* <Route path="checkout" element={<CheckoutPage />} /> */}
       <Route path="/edit-profile" element={<EditProfilePage />}  />
       <Route path="*"  element={<NotFoundPage />}/>
       <Route path="payment_status" element={<PaymentStatusPage setNumberCartItems={setNumberCartItems} />} />
