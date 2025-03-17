@@ -16,9 +16,11 @@ import UserProfilePage from "./components/user/UserProfilePage"
 import EditProfilePage from "./components/user/EditProfilePage"
 import PaymentStatusPage from "./components/payment/PaymentStatusPage"
 import AboutPage from "./components/home/AboutPage"
+import AbouttPage from "./components/home/AbouttPage"
 import ContactPage from "./components/home/ContactPage"
 // import CardContainer from "./components/home/CardContainer"
 import ParentCategory from "./components/home/ParentCategory"
+import ShippingForm from "./components/product/Shipping"
 // import PaymentSection from "./components/checkout/PaymentSection"
 
 
@@ -50,8 +52,10 @@ const App = () => {
       <Route path="/" element={<MainLayout numCartItems={numCartItems} />}>
       <Route index  element={<HomePage />}/>
       <Route path="about" element={<AboutPage />} />
+      <Route path="aboutt" element={<AbouttPage />} />
       <Route path="category" element={<ParentCategory />} />
       <Route path="contact" element={<ContactPage />} />
+      <Route path="shipping" element={<ShippingForm />} />
       <Route path="products/:slug" element={<ProductPage setNumberCartItems = {setNumberCartItems} />} />
       <Route path="cart" element={<CartPage setNumberCartItems={setNumberCartItems}/>} />
       <Route path="checkout" element={

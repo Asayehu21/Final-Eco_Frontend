@@ -1,5 +1,7 @@
+
 .aboutContainer {
-    max-width: 800px;
+    background-color: #f9f9f9;  
+    max-width: auto;
     margin: auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -7,33 +9,60 @@
   
   .header {
     text-align: center;
-    margin-bottom: 20px;
+    color:white;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    word-spacing: 5px;
+    line-height: 2;
+    background-color:rgb(17, 159, 78)
+  }
+
+  .missionImage {
+    width: 100%; /* Makes image responsive */
+    max-width: 400px; /* Prevents it from becoming too large */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing around inline images */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
   }
   
-  .mission, .vision, .values, .team, .cta {
-    margin: 20px 0;
-  }
+  /* .mission, .vision, .values, .team, .cta {
+    margin: 10px 0;
+  } */
   
   .teamMembers {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px; /* Space between items */
+    margin-left: 70px;
+    margin-right: 70px;
+    
+    
   }
   
   .teamMember {
-    text-align: center;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    box-shadow:cadetblue;
+    border: 1px solid rgb(17, 159, 78);
+    border-radius: 8px;
+    
   }
-  
-  .teamMember img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  .teamMember :hover {
+    text-align: justify;
+    background-color: rgb(17, 159, 78);
+    padding: 20px;
+    color: white;
+    box-shadow:cadetblue;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
   }
-  
-  .cta {
-    text-align: center;
-  }
-  
+
   .ctaButton {
     padding: 10px 20px;
     background-color: #6050DC;
@@ -42,13 +71,20 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .contactInfo {
+    /* background-color: #fff; White background for contact info */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 50px; /* Space below contact info */
+    margin-top: 50px;
+    /* padding-left: 300px; */
+  }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
     .header h1 {
       font-size: 2em; /* Adjust header size for smaller screens */
     }
-  
     .header p,
     .mission p,
     .vision p,

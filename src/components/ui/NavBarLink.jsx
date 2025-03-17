@@ -122,6 +122,19 @@ const NavBarLink = () => {
     Home
      </NavLink>
 </li>
+
+<li className="nav-item">
+    <NavLink
+      to="/aboutt"
+      className={({isActive}) => 
+       isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
+     }
+     end
+     >
+    Aboutt
+     </NavLink>
+</li>
+
 <li className="nav-item">
     <NavLink
       to="/about"
@@ -144,7 +157,7 @@ const NavBarLink = () => {
     Category
      </NavLink>
 </li>
-<li className='nav-item'>
+{/* <li className='nav-item'>
             <NavLink
               to="/login"
               className={({isActive }) =>
@@ -154,7 +167,7 @@ const NavBarLink = () => {
             >
                 Login
             </NavLink>
-        </li>
+        </li> */}
         <li className="nav-item">
             <NavLink
               to="/signup"
@@ -163,7 +176,7 @@ const NavBarLink = () => {
              }
              end
              >
-                Register
+                Account
 
              </NavLink>
         </li>

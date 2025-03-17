@@ -18,7 +18,7 @@ const NavBar = ({ numCartItems }) => {
         {/* Logo and Brand Name */}
         <Link className="navbar-brand d-flex align-items-center fw-bold text-uppercase" to="/">
           <img src={logo} alt="Shopp It Logo" style={{ height: '60px', marginRight: '10px' }} />
-          Shopp It
+          {/* Shopp It */}
         </Link>
 
         {/* Navbar Toggle Button */}

@@ -37,7 +37,7 @@ const PaymentStatusPage = ({setNumberCartItems}) => {
                 <h2 className="display-4 fw-bold">{statusMessage}</h2>
                 <p className="lead fw-normal text-white-75 mb-4">{statusSubMessage}</p>
                 <span>
-                    <Link to="/profile" className="btn btn-light btn-lg px-4 py-2 mx-3">View Order Detail</Link>
+                    <Link to="/shipping" className="btn btn-light btn-lg px-4 py-2 mx-3">Add Your Address</Link>
                     <Link to="/category" className="btn btn-light btn-lg px-4 py-2 mx-3">Continue Shopping</Link>
                 </span>
             </div>

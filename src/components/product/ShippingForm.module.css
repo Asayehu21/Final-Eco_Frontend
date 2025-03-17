@@ -1,0 +1,13 @@
+/* ShippingForm.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.card {
+    width: 100%;
+    max-width: 500px; /* Maximum width of the card */
+    margin: 20px; /* Margin for spacing */
+}

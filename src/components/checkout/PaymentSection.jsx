@@ -34,7 +34,7 @@ const PaymentSection = () => {
         </div>
         <div className="card-body">
           <button className={`btn btn-primary w-100 mb-3 ${styles.paypalButton}`} id="paypal-button" disabled={loading}>
-            <i className="bi bi-paypal"></i> Pay with PayPal
+            <i className="bi bi-chapa"></i> Pay with Chapa
           </button>
 
           <button
