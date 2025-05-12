@@ -3,7 +3,7 @@ import './footer.css'; // Optional: for additional styling
 
 const Footer = () => {
   return (
-    <footer className="py-5" style={{ backgroundColor: '#19c462', color: 'white' }}>
+    <footer className="py-5" style={{ backgroundColor: '#79AEC8', color: 'white' }}>
       <div className="container d-flex justify-content-between align-items-center">
         
         {/* Link section */}
@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* Copyright section */}
         <p className="small mb-0 text-center" style={{ flex: 1 }}> 
-          &copy; 2024 Bule Hora Shop
+          &copy; 2025 Bule Hora Shop All Right Reserved
         </p>
 
         {/* Social Media Icons Section */}

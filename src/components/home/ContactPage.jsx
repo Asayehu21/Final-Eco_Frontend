@@ -36,7 +36,7 @@ const ContactPage = () => {
 
             <h5 className="mt-4 text-lg font-bold">Address</h5>
             <p className="flex items-center ms-5">
-              <FaMapMarkerAlt className="me-3" /> Addis Ababa, Ethiopia
+              <FaMapMarkerAlt className="me-3" /> Bule Hora, Ethiopia
             </p>
           </div>
 

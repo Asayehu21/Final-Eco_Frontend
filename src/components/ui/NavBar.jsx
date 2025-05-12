@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from "./NavBar.module.css";
 import NavBarLink from "./NavBarLink";
 import logo from "../../assets/final-logo.png"; // Path to your logo file
+// import logo from "../../assets/buleshop.png";
 
 const NavBar = ({ numCartItems }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);

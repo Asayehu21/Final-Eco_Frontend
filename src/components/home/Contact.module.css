@@ -59,7 +59,7 @@ input, textarea {
 }
 
 .submitButton {
-  background-color: #12c462; /* Match footer color */
+  background-color: #205067; /* Match footer color */
   color: white; /* White text */
   padding: 10px 15px; /* Padding */
   border: none; /* No border */
@@ -68,5 +68,5 @@ input, textarea {
 }
 
 .submitButton:hover {
-  background-color: #0f8447; /* Darker shade on hover */
+  background-color: #79AEC8; /* Darker shade on hover */
 }

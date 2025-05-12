@@ -273,15 +273,17 @@ const SignupPage = () => {
 
           <button
             type="submit"
-            className="btn btn-primary w-50"
+            className="btn btn-primary w-30"
             disabled={loading}
-          >
+          > <strong>
             {loading ? "Registering..." : "Signup"}
+            </strong>
           </button>
 
         </form>
         <div className="signup-footer">
-          <p>Already have an account? <a href="/login"> <strong> Login</strong></a></p>
+          <p>Already have an account? <a href="/login"> <strong> Login</strong> </a></p>
+          
         </div>
         
       </div>

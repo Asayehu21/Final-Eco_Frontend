@@ -15,7 +15,7 @@
     padding-bottom: 50px;
     word-spacing: 5px;
     line-height: 2;
-    background-color:rgb(17, 159, 78)
+    background-color:#79AEC8
   }
 
   .missionImage {
@@ -27,6 +27,7 @@
     border-radius: 10px; /* Rounds the corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
     object-fit: cover; /* Ensures the image covers the area without distortion */
+    
   }
   
   /* .mission, .vision, .values, .team, .cta {
@@ -41,6 +42,7 @@
     margin-right: 70px;
     
     
+    
   }
   
   .teamMember {
@@ -48,21 +50,22 @@
     background-color: white;
     padding: 20px;
     box-shadow:cadetblue;
-    border: 1px solid rgb(17, 159, 78);
+    border: 1px solid rgb(16, 134, 176);
     border-radius: 8px;
+    
     
   }
   .teamMember :hover {
     text-align: justify;
-    background-color: rgb(17, 159, 78);
+    background-color: #79AEC8;
     padding: 20px;
     color: white;
     box-shadow:cadetblue;
     border: 1px solid #ccc;
     border-radius: 8px;
-    
   }
 
+  
   .ctaButton {
     padding: 10px 20px;
     background-color: #6050DC;

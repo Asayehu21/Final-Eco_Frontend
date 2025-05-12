@@ -21,6 +21,7 @@ import ContactPage from "./components/home/ContactPage"
 // import CardContainer from "./components/home/CardContainer"
 import ParentCategory from "./components/home/ParentCategory"
 import ShippingForm from "./components/product/Shipping"
+import SellerLoginPage from "./components/user/SellerLoginPage"
 // import PaymentSection from "./components/checkout/PaymentSection"
 
 
@@ -64,6 +65,7 @@ const App = () => {
         </ProtectedRoute>  } />
       <Route path="login" element={<LoginPage />} />
       <Route path="signup" element={<SignupPage />} />
+      <Route path="seller" element={<SellerLoginPage />} />
       <Route path="profile" element={<UserProfilePage />} />
       {/* <Route path="checkout" element={<CheckoutPage />} /> */}
       <Route path="/edit-profile" element={<EditProfilePage />}  />

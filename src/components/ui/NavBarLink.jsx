@@ -42,6 +42,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold " : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Home
      </NavLink>
@@ -53,6 +55,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     About
      </NavLink>
@@ -64,6 +68,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Category
      </NavLink>
@@ -75,6 +81,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
       Profile
     {/* {`Hi ${username}`} */}
@@ -87,12 +95,14 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Contact
      </NavLink>
 </li>
 
-<li className="nav-item" 
+{/* <li className="nav-item" 
      onClick={logout}
         >
     <NavLink
@@ -106,7 +116,7 @@ const NavBarLink = () => {
      ><button className='bg-success text-white'>Logout</button>
      
      </NavLink>
-</li>
+</li> */}
 </> ) :
 
 (
@@ -115,15 +125,17 @@ const NavBarLink = () => {
     <NavLink
       to="/"
       className={({isActive}) => 
-       isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
+       isActive ? "nav-link active fw-semibold hover green" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Home
      </NavLink>
 </li>
 
-<li className="nav-item">
+{/* <li className="nav-item">
     <NavLink
       to="/aboutt"
       className={({isActive}) => 
@@ -133,7 +145,7 @@ const NavBarLink = () => {
      >
     Aboutt
      </NavLink>
-</li>
+</li> */}
 
 <li className="nav-item">
     <NavLink
@@ -142,6 +154,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     About
      </NavLink>
@@ -153,6 +167,8 @@ const NavBarLink = () => {
        isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Category
      </NavLink>
@@ -175,6 +191,8 @@ const NavBarLink = () => {
                isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
              }
              end
+             onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+             onMouseOut={(e) => e.currentTarget.style.color = ''}
              >
                 Account
 
@@ -184,9 +202,11 @@ const NavBarLink = () => {
     <NavLink
       to="/contact"
       className={({isActive}) => 
-       isActive ? "nav-link active fw-semibold" : "nav-link fs-25 fw-normal"
+       isActive ? "nav-link active fw-semibold hover green" : "nav-link fs-25 fw-normal"
      }
      end
+     onMouseOver={(e) => e.currentTarget.style.color = 'blue'}
+     onMouseOut={(e) => e.currentTarget.style.color = ''}
      >
     Contact
      </NavLink>

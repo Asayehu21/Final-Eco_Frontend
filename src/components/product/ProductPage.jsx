@@ -80,9 +80,9 @@ const ProductPage = ({ setNumberCartItems }) => {
               <h1 className="display-5 fw-bolder">{product.name || "Product Name"}</h1>
               <div className="fs-5 mb-5">
                 {product.discounted_price && (
-                  <span className="text-decoration-line-through">{`$${product.price}`}</span>
+                  <span className="text-decoration-line-through">{`${product.price} ETB`}</span>
                 )}
-                <span>{`$${product.discounted_price || product.price}`}</span>
+                <span>{`${product.discounted_price || product.price} ETB`}</span>
               </div>
               <p className="lead">{product.description || "No description available."}</p>
               <div className="d-flex">

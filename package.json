@@ -20,7 +20,9 @@
     "react-spinners": "^0.15.0",
     "react-spinners-kit": "^1.9.1",
     "react-toastify": "^11.0.2",
-    "reactstrap": "^9.2.3"
+    "react-type-animation": "^3.2.0",
+    "reactstrap": "^9.2.3",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

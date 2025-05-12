@@ -75,7 +75,7 @@ const CartItem = ({ item, cartitems, setCartItems, setNumberCartItems }) => {
                     />
                     <button
                         className="btn btn-sm mx-2"
-                        style={{ backgroundColor: "#4b3bcb", color: "white" }}
+                        style={{ backgroundColor: "#79AEC8", color: "white" }}
                         onClick={updateCartItem}
                     >
                         Update

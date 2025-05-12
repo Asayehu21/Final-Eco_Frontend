@@ -41,7 +41,7 @@ const AboutPage = () => {
           <div className={styles.teamMember}>
             {/* <img src="/path/to/image2.jpg" alt="Team Member 2" /> */}
             <h3>Our Mission</h3>
-            <p>At [Your Company Name], we believe that everyone deserves to feel inspired and empowered. Our mission is to provide high-quality products that not only meet your needs but also ignite your passion for life. <br/>
+            <p>At Bule Hora Shop, we believe that everyone deserves to feel inspired and empowered. Our mission is to provide high-quality products that not only meet your needs but also ignite your passion for life. <br/>
             We strive to create a community where our customers feel valued and motivated to pursue their dreams.</p>
           </div>
           

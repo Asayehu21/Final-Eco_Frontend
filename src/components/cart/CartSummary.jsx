@@ -27,8 +27,8 @@ const CartSummary = ({ cartitems, taxRate }) => {
                         <button
                             className="btn btn-primary w-100 mt-4"
                             style={{
-                                backgroundColor: "#6050DC",
-                                borderColor: "#6050DC",
+                                backgroundColor: "#79AEC8",
+                                borderColor: "#79AEC8",
                             }}
                         >
                             Proceed to Checkout

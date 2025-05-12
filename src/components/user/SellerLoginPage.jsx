@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContext'
 
 
-const LoginPage = () => {
+const SellerLoginPage = () => {
     const {setIsAuthenticated, get_username} = useContext(AuthContext)
 
     const location = useLocation()
@@ -24,7 +24,7 @@ const LoginPage = () => {
         e.preventDefault()
         setLoading(true)
 
-        api.post("token/", userInfo)
+        api.post("admin/", userInfo)
         .then(res => {
             console.log(res.data)
             localStorage.setItem("access", res.data.access)
@@ -69,17 +69,15 @@ const LoginPage = () => {
                 </div>
                 {error && <Error error={error} />}
 
-                <button type="submit" className="btn btn-primary w-100" disabled={loading} ><strong>Login</strong></button>
+                <button type="submit" className="btn btn-primary bg-primary w-100" disabled={loading} > Seller Login</button>
             </form>
             <div className="login-footer">
                 {/* <p><a href="#">Forgot Password</a> </p> */}
-                <p>Don't have an account? <a href="signup"><strong>Sign up</strong></a></p>
-                <p>Already have a Seller account?</p>
-                <p> <a href="http://127.0.0.1:8000/admin/login/?next=/admin/"> <span> <strong>Seller Login</strong> </span></a></p>
+                <p>Don't have an account? <a href="signup">Sign up</a></p>
             </div>
         </div>  
     </div>
   )
 }
 
-export default LoginPage
+export default SellerLoginPage
