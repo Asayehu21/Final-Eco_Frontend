@@ -211,14 +211,7 @@ const SignupPage = () => {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary w-30"
-            disabled={loading}
-          > <strong>
-            {loading ? "Registering..." : "Signup"}
-            </strong>
-          </button>
+          
           </div>
           <div className="col-md-6">
           <div className="mb-3">
@@ -300,6 +293,14 @@ const SignupPage = () => {
           </div>
           
           </div>
+          <button
+            type="submit"
+            className="btn btn-primary w-30"
+            disabled={loading}
+          > <strong>
+            {loading ? "Registering..." : "Signup"}
+            </strong>
+          </button>
          
           
           {error && <Error error={error} />}
