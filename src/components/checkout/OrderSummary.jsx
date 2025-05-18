@@ -2,9 +2,9 @@
 import OrderItem from './OrderItem'
 import styles from './OrderSummary.module.css'
 
-const OrderSummary = ({ cartitems, cartTotal, tax }) => {
+const OrderSummary = ({ cartitems, cartTotal, tax, com }) => {
 
-  const total = (cartTotal + tax).toFixed(2)
+  const total = (cartTotal + tax + com).toFixed(2)
   return (
     <div className='col-md-8'>
         <div className={`card mb-4 ${styles.card}`}>

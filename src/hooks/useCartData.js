@@ -6,11 +6,13 @@ function useCartData(){
     const [cartitems, setCartItems] = useState([]);
     //const [cartTotal, setCartTotal] = useState(0.00)
     const taxRate = 0.15; // 15%
+    const comRate = 0.02; //2%
     const [loading, setLoading] = useState(false)
 
     // Calculate the total dynamically based on cart items
     const cartTotal = cartitems.reduce((acc, item) => acc + (item.total || 0), 0);
     const tax = cartTotal * taxRate;
+    const com = cartTotal * comRate;
 
     useEffect(() => {
         setLoading(true)
@@ -29,7 +31,7 @@ function useCartData(){
             });
     }, [cart_code]);
 
-    return { cartitems, setCartItems, cartTotal, loading, taxRate, tax}
+    return { cartitems, setCartItems, cartTotal, loading, taxRate, tax, comRate, com}
 
 }
 

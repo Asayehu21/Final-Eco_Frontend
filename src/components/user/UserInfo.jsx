@@ -47,10 +47,11 @@ const UserInfo = ({ userInfo }) => {
                       <strong>Email: </strong>{userInfo.email}
                     </p>
                     
+                    
                   </div>
                   <div className="col-md-6">
                   <p>
-                      <strong>Phone: </strong>{userInfo.phone}
+                      <strong>Phone </strong>{userInfo.phone}
                     </p>
                   <p>
                       <strong>City </strong>{userInfo.city}
@@ -58,6 +59,10 @@ const UserInfo = ({ userInfo }) => {
                   <p>
                       <strong>Region </strong>{userInfo.state}
                   </p>
+
+                  {/* <p>
+                      <strong>Role </strong>{userInfo.role}
+                  </p> */}
                   
 
     <p className="nav-item" 

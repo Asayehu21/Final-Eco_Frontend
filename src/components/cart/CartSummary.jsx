@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
-const CartSummary = ({ cartitems, taxRate }) => {
+const CartSummary = ({ cartitems, taxRate, comRate }) => {
     const subTotal = cartitems.reduce((acc, item) => acc + (item.total || 0), 0);
     const cartTax = subTotal * taxRate;
-    const total = subTotal + cartTax;
+    const com = subTotal * comRate;
+    const total = subTotal + cartTax + com;
 
     return (
         <div className="col-md-4 align-self-start">
@@ -18,6 +19,10 @@ const CartSummary = ({ cartitems, taxRate }) => {
                     <div className="d-flex justify-content-between">
                         <span>Tax:</span>
                         <span>{`${cartTax.toFixed(2)} ETB`}</span>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                        <span>Commission:</span>
+                        <span>{`${com.toFixed(2)} ETB`}</span>
                     </div>
                     <div className="d-flex justify-content-between">
                         <strong>Total:</strong>

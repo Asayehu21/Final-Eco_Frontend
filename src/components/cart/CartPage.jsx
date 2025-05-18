@@ -32,7 +32,7 @@ const CartPage = ({ setNumberCartItems }) => {
     //         });
     // }, []);
 
-    const { cartitems, setCartItems, cartTotal, loading, tax, taxRate} = useCartData()
+    const { cartitems, setCartItems, cartTotal, loading, tax, taxRate, com, comRate} = useCartData()
 
     if(loading){
         return <Spinner loading={loading}/>
@@ -62,7 +62,7 @@ const CartPage = ({ setNumberCartItems }) => {
                         />
                     ))}
                 </div>
-                <CartSummary cartitems={cartitems} taxRate={taxRate} />
+                <CartSummary cartitems={cartitems} taxRate={taxRate} comRate={comRate} />
             </div>
         </div>
     );

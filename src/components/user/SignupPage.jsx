@@ -16,6 +16,7 @@ const SignupPage = () => {
     state: "",
     address: "",
     phone: "",
+    role: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -98,6 +99,12 @@ const SignupPage = () => {
       setLoading(false);
       return;
     }
+     // Validate role
+    if (!formData.role) {
+      setError("Please select a role.");
+      setLoading(false);
+      return;
+    }
 
     try {
       const response = await api.post("register/", formData);
@@ -115,6 +122,7 @@ const SignupPage = () => {
         state: "",
         address: "",
         phone: "",
+        role: "", // Reset role
       });
       setError(""); // Clear error message
 
@@ -203,6 +211,14 @@ const SignupPage = () => {
               required
             />
           </div>
+          <button
+            type="submit"
+            className="btn btn-primary w-30"
+            disabled={loading}
+          > <strong>
+            {loading ? "Registering..." : "Signup"}
+            </strong>
+          </button>
           </div>
           <div className="col-md-6">
           <div className="mb-3">
@@ -265,20 +281,30 @@ const SignupPage = () => {
               placeholder="Enter your phone number"
             />
           </div>
+            <div className="mb-3">
+                <label htmlFor="role" className="form-label">Role</label>
+                <select
+                  name="role"
+                  value={formData.role}
+                  onChange={handleChange}
+                  className="form-control"
+                  id="role"
+                  required
+                >
+                  <option value="" disabled>Select your role</option>
+                  <option value="User">User</option>
+                  <option value="Seller">Seller</option>
+                  <option value="Admin">Admin</option>
+                </select>
+              </div>
           </div>
+          
           </div>
          
           
           {error && <Error error={error} />}
 
-          <button
-            type="submit"
-            className="btn btn-primary w-30"
-            disabled={loading}
-          > <strong>
-            {loading ? "Registering..." : "Signup"}
-            </strong>
-          </button>
+          
 
         </form>
         <div className="signup-footer">
